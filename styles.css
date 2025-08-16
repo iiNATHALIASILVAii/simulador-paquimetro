@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e border não alterem o tamanho total do elemento */
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #305e2f; /* Vermelho escuro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff; /* Cor do texto padrão para branco */
+}
+
+/* Título */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.3em;
+}
+
+/* Contêiner principal do parquímetro */
+.parquimetro-container {
+  display: flex; /* Alinha o input e o botão lado a lado */
+  align-items: flex-end; /* Alinha os itens na parte de baixo */
+  gap: 10px; /* Espaço entre os elementos */
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+/* Input de valor */
+#valor-inserido {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Botão */
+button {
+  background-color: #4caf50; /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Seção de resultados */
+.resultado {
+  text-align: center;
+}
+
+.resultado h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.resultado p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
